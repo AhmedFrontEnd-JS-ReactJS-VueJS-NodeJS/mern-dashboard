@@ -100,7 +100,7 @@ function App() {
           catchAll={<ErrorComponent />}
           resources={[
             {
-              name: "property",
+              name: "properties",
               list: AllProperties,
               show:PropertyDetails,
               create:CreateProperty,
@@ -109,18 +109,18 @@ function App() {
 
             },
             {
-              name: "agent",
+              name: "agents",
               list: MuiInferencer,
               icon:<PeopleAltOutlined/>,
               
             },
             {
-              name: "review",
+              name: "reviews",
               list: MuiInferencer,
               icon:<StarOutlineRounded/>,
             },
             {
-              name: "message",
+              name: "messages",
               list: MuiInferencer,
               icon:<ChatBubbleOutline/>,
             },

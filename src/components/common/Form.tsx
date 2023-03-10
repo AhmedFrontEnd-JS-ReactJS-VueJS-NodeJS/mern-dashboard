@@ -7,9 +7,20 @@ import CustomButton from './CustomButton';
 const Form = ({type,register,handleSubmit,handleImageChange,formLoading,onFinishHandler,propertyImage} : FormProps) => {
   return (
     <Box>
-      <Typography>
-        {type} a property
+      <Typography fontSize={25} fontWeight={700} color="#11142D">
+        {type} a Property
       </Typography>
+      <Box mt={2.5} borderRadius="15px" bgcolor="#fcfcfc">
+        <form style={{marginTop:'20px',width:'100%',display:'flex',flexDirection:"column",gap:"20px",padding:"20px"}} onSubmit={handleSubmit(onFinishHandler)}>
+            <FormControl>
+              <FormHelperText>Enter Property Name</FormHelperText>
+              <TextField 
+              
+              />
+            </FormControl>
+        </form>
+
+      </Box>
     </Box>
   )
 }

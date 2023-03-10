@@ -11,7 +11,7 @@ export const AllProperties = () => {
 
   return (
     <Box>
-        <Stack 
+        <Stack
         direction='row'
         justifyContent="space-between"
         alignItems="center"
@@ -19,9 +19,9 @@ export const AllProperties = () => {
             <Typography color="#11142d" fontSize={25} fontWeight={700}>
               All Properties
             </Typography>
-            <CustomButton 
+            <CustomButton
             title="Add-property"
-            handleClick={()=> navigate('/property/create')}
+            handleClick={()=> navigate('/properties/create')}
             backgroundColor="#475be8"
             color="#fcfcfc"
             icon={<Add/>}
