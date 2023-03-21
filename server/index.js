@@ -3,10 +3,13 @@ import * as dotenv from 'dotenv';
 import cors from 'cors';
 import { connect } from 'mongoose';
 import connectDB from './mongodb/connect.js';
+import userRouter from './routes/user.routes.js';
+import propertyRouter from './routes/property.routes.js';
+
+
+
 
 dotenv.config();
-
-
 
 const app = express();
 
@@ -17,10 +20,13 @@ app.get('/',(req,res)=>{
     res.send({message:'hello world'});
 })
 
+app.use('/api/v1/users',userRouter);
+app.use('/api/v1/properties',propertyRouter);
+
 const startServer=async ()=>{
 try {
     connectDB(process.env.MONGODB_URL);
-    app.listen(8080 , ()=> console.log('server has started on port http://localhost:8080'))
+    app.listen(8000 , ()=> console.log('server has started on port http://localhost:8000'))
 } catch (error) {
     console.log(error);
 }
