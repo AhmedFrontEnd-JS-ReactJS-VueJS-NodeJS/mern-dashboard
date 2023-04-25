@@ -1,9 +1,9 @@
 import React from 'react'
 import { Add } from '@mui/icons-material';
-import { useList } from '@pankod/refine-core/dist/hooks';
+// import { useList } from '@pankod/refine-core/dist/hooks';
 import { Box,Stack,Typography} from '@pankod/refine-mui';
 import { useNavigate } from '@pankod/refine-react-router-v6';
-import { PropertyCard,CustomButton } from 'components';
+import { CustomButton } from 'components';
 
 
 export const AllProperties = () => {
