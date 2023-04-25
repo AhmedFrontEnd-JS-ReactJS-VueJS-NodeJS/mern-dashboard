@@ -16,7 +16,7 @@ import routerProvider from "@pankod/refine-react-router-v6";
 import axios, { AxiosRequestConfig } from "axios";
 import { ColorModeContextProvider } from "contexts";
 import { Title, Sider, Layout, Header } from "components/layout";
-import { Login,Home,Agents,MyProfile,PropertyDetails,AllProperties,CreateProperty,AgentProfile,EditProperty } from "pages";
+import { Login,Home,PropertyDetails,AllProperties,CreateProperty,EditProperty } from "pages";
 import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
 
